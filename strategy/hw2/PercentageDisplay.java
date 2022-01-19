@@ -21,7 +21,9 @@ public class PercentageDisplay implements Observer {
         votes.forEach((key,value) -> numVotes += value);
     
         System.out.println("\nCurrent Percent of Votes:");
-        votes.forEach((key,value) -> System.out.println(key + ": " + (double)Math.round(((double)value/numVotes*100)*10)/10 +"%"));
+        votes.forEach((key,value) -> System.out.println
+        (key + ": " + (double)Math.round
+        (((double)value/numVotes*100)*10)/10 +"%"));
 
     }
     
