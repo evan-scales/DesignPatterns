@@ -1,5 +1,6 @@
 /**
- * Written by Evan Scales
+ * Interface for the poll observers
+ * @author Evan Scales
  */
 import java.util.HashMap;
 public interface Observer {
