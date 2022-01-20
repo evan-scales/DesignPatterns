@@ -29,7 +29,7 @@ public class PercentageDisplay implements Observer {
     }
 
     /**
-     * Displays the poll results as tallys
+     * Displays the poll results as percentages
      */
     private void display() {
         votes.forEach((key,value) -> numVotes += value);
