@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 /**
- * written by Evan Scales
+ * Holds a set a 
+ * @author Evan Scales
  */
 public class Listing {
     private String title;
@@ -18,6 +19,11 @@ public class Listing {
     public void remove(String item) {
         items.remove(new String(item));
     }
+    
+    /**
+     * Returns the title of the list
+     * @return the list title
+     */
     public String getTitle() {
         return title;
     }
