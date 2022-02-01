@@ -1,5 +1,5 @@
 /**
- * Abastract class for the car object
+ * Abstract class for the car object
  * @author Evan Scales
  */
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ public abstract class Car {
     public void assemble() {
         addFrame();
         addWheels();
-        addEnginge();
+        addEngine();
         addWindows();
         addAccessories();
         displayAccessories();
@@ -48,7 +48,7 @@ public abstract class Car {
     /**
      * Add an anengine to the car
      */
-    protected void addEnginge() {
+    protected void addEngine() {
         System.out.println("Adding a standard engine");
     }
 

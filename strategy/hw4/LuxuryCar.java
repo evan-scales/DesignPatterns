@@ -25,7 +25,7 @@ public class LuxuryCar extends Car {
      * Adds a new fancy engine to the car
      */
     @Override
-    protected void addEnginge() {
+    protected void addEngine() {
         System.out.println("Adding a Supped Up Engine");
     }
     /**
