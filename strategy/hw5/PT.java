@@ -8,6 +8,7 @@ public class PT {
     private String lastName;
     private String bio;
     private Exercise[] exercises;
+    private int numExercises;
 
     /**
      * Constructor for the PT
@@ -20,6 +21,7 @@ public class PT {
         this.lastName = lastName;
         this.bio = bio;
         exercises = new Exercise[2];
+        numExercises = 0;
     }
 
     /**
@@ -30,15 +32,11 @@ public class PT {
      */
     public void addExercise(String title, ArrayList<String> muscleGroups, ArrayList<String> directions) {
         Exercise toAdd = new Exercise(title, muscleGroups, directions);
-        for (int i = 0; i < exercises.length; i++) {
-            if (exercises[i] == null) {
-                exercises[i] = toAdd;
-                break;
-            } else if (exercises[i] != null && i == exercises.length - 1) {
-                exercises = growArray(exercises);
-                exercises[i] = toAdd;
-            }
+        if (numExercises >= exercises.length) {
+            exercises = growArray(exercises);
         }
+        exercises[numExercises] = toAdd;
+        numExercises++;
     }
 
     /**
